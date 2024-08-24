@@ -1,0 +1,289 @@
+<!DOCTYPE html>
+<html lang="fa-IR" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>تماس با ما</title>
+    <link rel="stylesheet" href="./output.css">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body class="bg-slate-100 md:bg-white dark:bg-black">
+
+    <header class="bg-white shadow-md w-full py-3  dark:bg-black">
+        <nav  class="flex justify-center items-center  mx-4 relative md:justify-around">
+            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="size-6 absolute right-0 md:hidden dark:text-white">
+                <path stroke-linecap="round" stroke-linejoin="round" d="M3.75 6.75h16.5M3.75 12h16.5m-16.5 5.25h16.5" />
+            </svg>
+            <div class="flex items-center justify-around w-[55%]"> 
+                <a href="./index.html"><h2 class="font-bold text-xl dark:text-dark-a-dark">کوئرا لیست</h2></a>
+                <a href="./index.html" class=" hidden md:inline-flex text-lg hover:text-light-primary dark:text-dark-a-dark dark:hover:text-dark-primary">صفحه اصلی</a> 
+                <a href="./about-us.html" class=" hidden md:inline-flex text-lg hover:text-light-primary dark:text-dark-a-dark dark:hover:text-dark-primary">درباره ما</a>
+                <a href="./contact-us.html" class=" hidden md:inline-flex text-lg hover:text-light-primary dark:text-dark-a-dark dark:hover:text-dark-primary">ارتباط با ما</a>
+            </div>
+            <div class=" gap-5 hidden  md:ml-[60px] lg:ml-[100px] md:inline-flex md:items-center">
+                <button class="bg-light-primary px-5 py-2 rounded-lg text-light-on-primary-light">ورود به اپلیکیشن</button>
+                <button id="darkbtn">
+                    <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" id="sun" class="size-6 cursor-pointer">
+                        <path stroke-linecap="round" stroke-linejoin="round" d="M12 3v2.25m6.364.386-1.591 1.591M21 12h-2.25m-.386 6.364-1.591-1.591M12 18.75V21m-4.773-4.227-1.591 1.591M5.25 12H3m4.227-4.773L5.636 5.636M15.75 12a3.75 3.75 0 1 1-7.5 0 3.75 3.75 0 0 1 7.5 0Z" />
+                    </svg>
+                </button>
+
+
+                  
+            </div>
+        </nav>
+    </header>
+
+    <section class="w-[95%] mx-auto pt-10 md:hidden   ">
+        <h1 class="font-bold text-center text-3xl dark:text-light-on-primary-light">تماس با من</h1>
+        <h3 class="mt-4 text-center w-4/5 mx-auto dark:text-light-on-primary-light">چیزی هست که بخوای ازم بپرسی؟ خوشحال میشم بتونم بهت کمکی کنم.</h3>
+        <div class="shadow-md bg-white rounded-xl border border-light-input-border mt-8 pb-3 dark:bg-dark-card-bg dark:border-dark-card-bg">
+            <form action="#"  autocomplete="off">
+                <div class="flex mt-5 ">
+                    <div class="w-1/2  p-3">
+                        <label for="first-name" class="dark:text-light-on-primary-light">نام :</label>
+                        <input type="text" id="first-name" required placeholder="نام شما" class="w-full border border-light-input-border mt-2 py-[10px] px-2 rounded-md focus:outline-none hover:bg-gray-100 hover:placeholder:text-gray-500 dark:bg-transparent dark:hover:bg-blue-950 dark:hover:placeholder:text-gray-200">
+                    </div>
+                    <div class="w-1/2  p-3">
+                        <label for="last-name" class="dark:text-light-on-primary-light">نام خانوادگی :</label>
+                        <input type="text" id="last-name" required placeholder="نام خانوادگی " class="w-full border border-light-input-border mt-2 py-[10px] px-2 rounded-md focus:outline-none hover:bg-gray-100 hover:placeholder:text-gray-500 dark:bg-transparent dark:hover:bg-blue-950 dark:hover:placeholder:text-gray-200">
+                    </div>
+                </div>
+                <div class="px-5 pt-5">
+                    <label for="email" class="pr-1 dark:text-light-on-primary-light">ایمیل :</label>
+                    <input type="email" name="email" id="email" required placeholder="ایمیل شما" class=" w-full border border-light-input-border mt-2 py-[10px] px-2 rounded-md focus:outline-none hover:bg-gray-100 hover:placeholder:text-gray-500 dark:bg-transparent dark:hover:bg-blue-950 dark:hover:placeholder:text-gray-200">
+                </div>
+                <div class="px-5 pt-7">
+                    <label for="phone" class="dark:text-light-on-primary-light">شماره تماس :</label>
+                    <input type="text" placeholder="شماره تماس شما" id="phone" class="w-full border border-light-input-border mt-2 py-[10px] px-2 rounded-md focus:outline-none hover:bg-gray-100 hover:placeholder:text-gray-500 dark:bg-transparent dark:hover:bg-blue-950 dark:hover:placeholder:text-gray-200">
+                </div>
+                <div class="px-5 pt-7">
+                    <label for="message" class="dark:text-light-on-primary-light">متن پیام شما :</label>
+                    <textarea name="message" rows="4" id="message" placeholder="متن پیام شما" class="w-full border border-light-input-border mt-3 p-2 rounded-md focus:outline-none hover:bg-gray-100 hover:placeholder:text-gray-500 resize-none dark:bg-transparent dark:hover:bg-blue-950 dark:hover:placeholder:text-gray-200"></textarea>
+                </div>
+            </form>
+            <div class="px-4 flex justify-center mt-3">
+                <button class="w-[95%] bg-light-primary py-2 text-white rounded-xl">ارسال پیام</button>
+            </div>
+        </div>
+    </section>
+
+    <section class="md:flex w-[90%] mt-28 mx-auto shadow-xl rounded-xl hidden dark:bg-dark-card-bg ">
+        <div class="w-1/2 flex flex-col gap-9 pt-10 pr-14">
+            <h1 class="font-bold text-4xl dark:text-light-on-primary-light">تماس با من</h1>
+            <h3 class="text-xl w-4/5 opacity-40 dark:text-light-on-primary-light">چیزی هست که بخوای ازم بپرسی؟ خوشحال میشم بتونم بهت کمکی کنم.</h3>
+            <div class="flex items-center gap-3">
+                <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="size-6 dark:text-white">
+                    <path stroke-linecap="round" stroke-linejoin="round" d="M2.25 6.75c0 8.284 6.716 15 15 15h2.25a2.25 2.25 0 0 0 2.25-2.25v-1.372c0-.516-.351-.966-.852-1.091l-4.423-1.106c-.44-.11-.902.055-1.173.417l-.97 1.293c-.282.376-.769.542-1.21.38a12.035 12.035 0 0 1-7.143-7.143c-.162-.441.004-.928.38-1.21l1.293-.97c.363-.271.527-.734.417-1.173L6.963 3.102a1.125 1.125 0 0 0-1.091-.852H4.5A2.25 2.25 0 0 0 2.25 4.5v2.25Z" />
+                </svg>
+                <p class="dark:text-light-on-primary-light">0912 1234567</p>
+            </div>
+            <div class="flex items-center gap-3">
+                <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="size-6 dark:text-white">
+                    <path stroke-linecap="round" stroke-linejoin="round" d="M21.75 6.75v10.5a2.25 2.25 0 0 1-2.25 2.25h-15a2.25 2.25 0 0 1-2.25-2.25V6.75m19.5 0A2.25 2.25 0 0 0 19.5 4.5h-15a2.25 2.25 0 0 0-2.25 2.25m19.5 0v.243a2.25 2.25 0 0 1-1.07 1.916l-7.5 4.615a2.25 2.25 0 0 1-2.36 0L3.32 8.91a2.25 2.25 0 0 1-1.07-1.916V6.75" />
+                </svg>
+                <p class="dark:text-light-on-primary-light">QueraList@gmail.com</p>  
+            </div>
+            <div class="flex items-center pt-36 dark:gap-5">
+                <a href="#">
+                    <svg xmlns="http://www.w3.org/2000/svg" x="0px" y="0px" width="80" height="80" viewBox="0,0,256,256" class="dark:hidden">
+                        <g transform="translate(51.2,51.2) scale(0.6,0.6)"><g fill="#000000" fill-rule="nonzero" stroke="none" stroke-width="1" stroke-linecap="butt" stroke-linejoin="miter" stroke-miterlimit="10" stroke-dasharray="" stroke-dashoffset="0" font-family="none" font-weight="none" font-size="none" text-anchor="none" style="mix-blend-mode: normal"><g transform="scale(10.66667,10.66667)"><path d="M10.9,2.1c-4.6,0.5 -8.3,4.2 -8.8,8.7c-0.5,4.7 2.2,8.9 6.3,10.5c0.3,0.1 0.6,-0.1 0.6,-0.5v-1.6c0,0 -0.4,0.1 -0.9,0.1c-1.4,0 -2,-1.2 -2.1,-1.9c-0.1,-0.4 -0.3,-0.7 -0.6,-1c-0.3,-0.1 -0.4,-0.1 -0.4,-0.2c0,-0.2 0.3,-0.2 0.4,-0.2c0.6,0 1.1,0.7 1.3,1c0.5,0.8 1.1,1 1.4,1c0.4,0 0.7,-0.1 0.9,-0.2c0.1,-0.7 0.4,-1.4 1,-1.8c-2.3,-0.5 -4,-1.8 -4,-4c0,-1.1 0.5,-2.2 1.2,-3c-0.1,-0.2 -0.2,-0.7 -0.2,-1.4c0,-0.4 0,-1 0.3,-1.6c0,0 1.4,0 2.8,1.3c0.5,-0.2 1.2,-0.3 1.9,-0.3c0.7,0 1.4,0.1 2,0.3c1.3,-1.3 2.8,-1.3 2.8,-1.3c0.2,0.6 0.2,1.2 0.2,1.6c0,0.8 -0.1,1.2 -0.2,1.4c0.7,0.8 1.2,1.8 1.2,3c0,2.2 -1.7,3.5 -4,4c0.6,0.5 1,1.4 1,2.3v2.6c0,0.3 0.3,0.6 0.7,0.5c3.7,-1.5 6.3,-5.1 6.3,-9.3c0,-6 -5.1,-10.7 -11.1,-10z"></path></g></g></g>
+                    </svg>
+                    <svg xmlns="http://www.w3.org/2000/svg" x="0px" y="0px" width="55" height="55" viewBox="0,0,256,256" class="hidden dark:inline-block">
+                        <g fill="#ffffff" fill-rule="nonzero" stroke="none" stroke-width="1" stroke-linecap="butt" stroke-linejoin="miter" stroke-miterlimit="10" stroke-dasharray="" stroke-dashoffset="0" font-family="none" font-weight="none" font-size="none" text-anchor="none" style="mix-blend-mode: normal"><g transform="scale(10.66667,10.66667)"><path d="M10.9,2.1c-4.6,0.5 -8.3,4.2 -8.8,8.7c-0.5,4.7 2.2,8.9 6.3,10.5c0.3,0.1 0.6,-0.1 0.6,-0.5v-1.6c0,0 -0.4,0.1 -0.9,0.1c-1.4,0 -2,-1.2 -2.1,-1.9c-0.1,-0.4 -0.3,-0.7 -0.6,-1c-0.3,-0.1 -0.4,-0.1 -0.4,-0.2c0,-0.2 0.3,-0.2 0.4,-0.2c0.6,0 1.1,0.7 1.3,1c0.5,0.8 1.1,1 1.4,1c0.4,0 0.7,-0.1 0.9,-0.2c0.1,-0.7 0.4,-1.4 1,-1.8c-2.3,-0.5 -4,-1.8 -4,-4c0,-1.1 0.5,-2.2 1.2,-3c-0.1,-0.2 -0.2,-0.7 -0.2,-1.4c0,-0.4 0,-1 0.3,-1.6c0,0 1.4,0 2.8,1.3c0.5,-0.2 1.2,-0.3 1.9,-0.3c0.7,0 1.4,0.1 2,0.3c1.3,-1.3 2.8,-1.3 2.8,-1.3c0.2,0.6 0.2,1.2 0.2,1.6c0,0.8 -0.1,1.2 -0.2,1.4c0.7,0.8 1.2,1.8 1.2,3c0,2.2 -1.7,3.5 -4,4c0.6,0.5 1,1.4 1,2.3v2.6c0,0.3 0.3,0.6 0.7,0.5c3.7,-1.5 6.3,-5.1 6.3,-9.3c0,-6 -5.1,-10.7 -11.1,-10z"></path></g></g>
+                    </svg>
+                </a>
+                <a href="#">
+                    <svg xmlns="http://www.w3.org/2000/svg" x="0px" y="0px" width="45" height="45" viewBox="0 0 50 50" class="dark:hidden">
+                        <path d="M25,2C12.317,2,2,12.317,2,25s10.317,23,23,23s23-10.317,23-23S37.683,2,25,2z M36.237,20.524 c0.01,0.236,0.016,0.476,0.016,0.717C36.253,28.559,30.68,37,20.491,37c-3.128,0-6.041-0.917-8.491-2.489 c0.433,0.052,0.872,0.077,1.321,0.077c2.596,0,4.985-0.884,6.879-2.37c-2.424-0.044-4.468-1.649-5.175-3.847 c0.339,0.065,0.686,0.1,1.044,0.1c0.505,0,0.995-0.067,1.458-0.195c-2.532-0.511-4.441-2.747-4.441-5.432c0-0.024,0-0.047,0-0.07 c0.747,0.415,1.6,0.665,2.509,0.694c-1.488-0.995-2.464-2.689-2.464-4.611c0-1.015,0.272-1.966,0.749-2.786 c2.733,3.351,6.815,5.556,11.418,5.788c-0.095-0.406-0.145-0.828-0.145-1.262c0-3.059,2.48-5.539,5.54-5.539 c1.593,0,3.032,0.672,4.042,1.749c1.261-0.248,2.448-0.709,3.518-1.343c-0.413,1.292-1.292,2.378-2.437,3.064 c1.122-0.136,2.188-0.432,3.183-0.873C38.257,18.766,37.318,19.743,36.237,20.524z"></path>
+                    </svg>
+                    <svg xmlns="http://www.w3.org/2000/svg" x="0px" y="0px" width="45" height="45" viewBox="0,0,256,256" class="hidden dark:inline-block">
+                        <g fill="#ffffff" fill-rule="nonzero" stroke="none" stroke-width="1" stroke-linecap="butt" stroke-linejoin="miter" stroke-miterlimit="10" stroke-dasharray="" stroke-dashoffset="0" font-family="none" font-weight="none" font-size="none" text-anchor="none" style="mix-blend-mode: normal"><g transform="scale(5.12,5.12)"><path d="M25,2c-12.683,0 -23,10.317 -23,23c0,12.683 10.317,23 23,23c12.683,0 23,-10.317 23,-23c0,-12.683 -10.317,-23 -23,-23zM36.237,20.524c0.01,0.236 0.016,0.476 0.016,0.717c0,7.318 -5.573,15.759 -15.762,15.759c-3.128,0 -6.041,-0.917 -8.491,-2.489c0.433,0.052 0.872,0.077 1.321,0.077c2.596,0 4.985,-0.884 6.879,-2.37c-2.424,-0.044 -4.468,-1.649 -5.175,-3.847c0.339,0.065 0.686,0.1 1.044,0.1c0.505,0 0.995,-0.067 1.458,-0.195c-2.532,-0.511 -4.441,-2.747 -4.441,-5.432c0,-0.024 0,-0.047 0,-0.07c0.747,0.415 1.6,0.665 2.509,0.694c-1.488,-0.995 -2.464,-2.689 -2.464,-4.611c0,-1.015 0.272,-1.966 0.749,-2.786c2.733,3.351 6.815,5.556 11.418,5.788c-0.095,-0.406 -0.145,-0.828 -0.145,-1.262c0,-3.059 2.48,-5.539 5.54,-5.539c1.593,0 3.032,0.672 4.042,1.749c1.261,-0.248 2.448,-0.709 3.518,-1.343c-0.413,1.292 -1.292,2.378 -2.437,3.064c1.122,-0.136 2.188,-0.432 3.183,-0.873c-0.742,1.111 -1.681,2.088 -2.762,2.869z"></path></g></g>
+                    </svg>
+                </a>
+                <a href="#">
+                    <svg xmlns="http://www.w3.org/2000/svg" x="0px" y="0px" width="75" height="75" viewBox="0 0 30 30" class="pr-5 dark:hidden" >
+                        <path d="M15,3C8.373,3,3,8.373,3,15c0,6.627,5.373,12,12,12s12-5.373,12-12C27,8.373,21.627,3,15,3z M10.496,8.403 c0.842,0,1.403,0.561,1.403,1.309c0,0.748-0.561,1.309-1.496,1.309C9.561,11.022,9,10.46,9,9.712C9,8.964,9.561,8.403,10.496,8.403z M12,20H9v-8h3V20z M22,20h-2.824v-4.372c0-1.209-0.753-1.488-1.035-1.488s-1.224,0.186-1.224,1.488c0,0.186,0,4.372,0,4.372H14v-8 h2.918v1.116C17.294,12.465,18.047,12,19.459,12C20.871,12,22,13.116,22,15.628V20z"></path>
+                    </svg>
+                    <svg xmlns="http://www.w3.org/2000/svg" x="0px" y="0px" width="55" height="55" viewBox="0,0,256,256" class="hidden dark:inline-block">
+                        <g fill="#ffffff" fill-rule="nonzero" stroke="none" stroke-width="1" stroke-linecap="butt" stroke-linejoin="miter" stroke-miterlimit="10" stroke-dasharray="" stroke-dashoffset="0" font-family="none" font-weight="none" font-size="none" text-anchor="none" style="mix-blend-mode: normal"><g transform="scale(8.53333,8.53333)"><path d="M15,3c-6.627,0 -12,5.373 -12,12c0,6.627 5.373,12 12,12c6.627,0 12,-5.373 12,-12c0,-6.627 -5.373,-12 -12,-12zM10.496,8.403c0.842,0 1.403,0.561 1.403,1.309c0,0.748 -0.561,1.309 -1.496,1.309c-0.842,0.001 -1.403,-0.561 -1.403,-1.309c0,-0.748 0.561,-1.309 1.496,-1.309zM12,20h-3v-8h3zM22,20h-2.824v-4.372c0,-1.209 -0.753,-1.488 -1.035,-1.488c-0.282,0 -1.224,0.186 -1.224,1.488c0,0.186 0,4.372 0,4.372h-2.917v-8h2.918v1.116c0.376,-0.651 1.129,-1.116 2.541,-1.116c1.412,0 2.541,1.116 2.541,3.628z"></path></g></g>
+                    </svg>
+                </a>
+                
+            </div>
+        </div>
+
+        <div class="w-1/2">
+            <form action="#" class="border-r pr-5" autocomplete="off">
+                <div class="flex mt-5 ">
+                    <div class="w-1/2  p-3">
+                        <label for="first-name" class="dark:text-light-on-primary-light">نام :</label>
+                        <input type="text" id="first-name" required placeholder="نام شما" class="w-full border border-light-input-border mt-2 py-[10px] px-2 rounded-md focus:outline-none hover:bg-gray-100 hover:placeholder:text-gray-500 dark:bg-transparent dark:hover:bg-blue-950 dark:hover:placeholder:text-gray-200">
+                    </div>
+                    <div class="w-1/2  p-3">
+                        <label for="last-name" class="dark:text-light-on-primary-light">نام خانوادگی :</label>
+                        <input type="text" id="last-name" required placeholder="نام خانوادگی " class="w-full border border-light-input-border mt-2 py-[10px] px-2 rounded-md focus:outline-none hover:bg-gray-100 hover:placeholder:text-gray-500 dark:bg-transparent dark:hover:bg-blue-950 dark:hover:placeholder:text-gray-200">
+                    </div>
+                </div>
+                <div class="px-5 pt-5">
+                    <label for="email" class="pr-1 dark:text-light-on-primary-light">ایمیل :</label>
+                    <input type="email" name="email" id="email" required placeholder="ایمیل شما" class=" w-full border border-light-input-border mt-2 py-[10px] px-2 rounded-md focus:outline-none hover:bg-gray-100 hover:placeholder:text-gray-500 dark:bg-transparent dark:hover:bg-blue-950 dark:hover:placeholder:text-gray-200">
+                </div>
+                <div class="px-5 pt-7">
+                    <label for="phone" class="dark:text-light-on-primary-light">شماره تماس :</label>
+                    <input type="text" placeholder="شماره تماس شما" id="phone" class="w-full border border-light-input-border mt-2 py-[10px] px-2 rounded-md focus:outline-none hover:bg-gray-100 hover:placeholder:text-gray-500 dark:bg-transparent dark:hover:bg-blue-950 dark:hover:placeholder:text-gray-200">
+                </div>
+                <div class="px-5 pt-7">
+                    <label for="message" class="dark:text-light-on-primary-light">متن پیام شما :</label>
+                    <textarea name="message" rows="4" id="message" placeholder="متن پیام شما" class="w-full border border-light-input-border mt-3 p-2 rounded-md focus:outline-none hover:bg-gray-100 hover:placeholder:text-gray-500 resize-none dark:bg-transparent dark:hover:bg-blue-950 dark:hover:placeholder:text-gray-200"></textarea>
+                </div>
+                <div class="px-4 pb-6 flex justify-center mt-3">
+                    <button class="w-[95%] bg-light-primary py-2 text-white rounded-xl">ارسال پیام</button>
+                </div>
+            </form>
+        </div>
+    </section>
+
+    <section class="w-[95%] md:hidden mx-auto mt-10">
+        <div class="flex gap-3 ">
+            <div class="flex items-center gap-4 pr-3 border border-light-input-border w-1/2 py-6 bg-white rounded-xl dark:bg-dark-card-bg dark:border-dark-card-bg">
+                <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="size-6 dark:text-white">
+                    <path stroke-linecap="round" stroke-linejoin="round" d="M21.75 6.75v10.5a2.25 2.25 0 0 1-2.25 2.25h-15a2.25 2.25 0 0 1-2.25-2.25V6.75m19.5 0A2.25 2.25 0 0 0 19.5 4.5h-15a2.25 2.25 0 0 0-2.25 2.25m19.5 0v.243a2.25 2.25 0 0 1-1.07 1.916l-7.5 4.615a2.25 2.25 0 0 1-2.36 0L3.32 8.91a2.25 2.25 0 0 1-1.07-1.916V6.75" />
+                </svg>
+                <div>
+                    <p class="font-bold dark:text-light-on-primary-light">ایمیل</p>
+                    <p class="dark:text-light-on-primary-light">QueraList@gmail.com</p>  
+                </div>
+            </div>
+            <div class="flex items-center gap-4 pr-9 border border-light-input-border w-1/2 bg-white rounded-xl dark:bg-dark-card-bg dark:border-dark-card-bg">
+                <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="size-6 dark:text-white">
+                    <path stroke-linecap="round" stroke-linejoin="round" d="M2.25 6.75c0 8.284 6.716 15 15 15h2.25a2.25 2.25 0 0 0 2.25-2.25v-1.372c0-.516-.351-.966-.852-1.091l-4.423-1.106c-.44-.11-.902.055-1.173.417l-.97 1.293c-.282.376-.769.542-1.21.38a12.035 12.035 0 0 1-7.143-7.143c-.162-.441.004-.928.38-1.21l1.293-.97c.363-.271.527-.734.417-1.173L6.963 3.102a1.125 1.125 0 0 0-1.091-.852H4.5A2.25 2.25 0 0 0 2.25 4.5v2.25Z" />
+                </svg>
+                <div>
+                    <p class="font-bold dark:text-light-on-primary-light">تلفن</p>
+                    <p class="dark:text-light-on-primary-light">0912 1234567</p>
+                </div>
+            </div>
+        </div>
+        <div class="flex items-center justify-center bg-white rounded-xl border border-light-input-border mt-8 dark:bg-dark-card-bg dark:border-dark-card-bg dark:py-2 dark:gap-6">
+            <a href="#">
+                <svg xmlns="http://www.w3.org/2000/svg" x="0px" y="0px" width="70" height="70" viewBox="0,0,256,256" class="dark:hidden">
+                    <g transform="translate(51.2,51.2) scale(0.6,0.6)"><g fill="#000000" fill-rule="nonzero" stroke="none" stroke-width="1" stroke-linecap="butt" stroke-linejoin="miter" stroke-miterlimit="10" stroke-dasharray="" stroke-dashoffset="0" font-family="none" font-weight="none" font-size="none" text-anchor="none" style="mix-blend-mode: normal"><g transform="scale(10.66667,10.66667)"><path d="M10.9,2.1c-4.6,0.5 -8.3,4.2 -8.8,8.7c-0.5,4.7 2.2,8.9 6.3,10.5c0.3,0.1 0.6,-0.1 0.6,-0.5v-1.6c0,0 -0.4,0.1 -0.9,0.1c-1.4,0 -2,-1.2 -2.1,-1.9c-0.1,-0.4 -0.3,-0.7 -0.6,-1c-0.3,-0.1 -0.4,-0.1 -0.4,-0.2c0,-0.2 0.3,-0.2 0.4,-0.2c0.6,0 1.1,0.7 1.3,1c0.5,0.8 1.1,1 1.4,1c0.4,0 0.7,-0.1 0.9,-0.2c0.1,-0.7 0.4,-1.4 1,-1.8c-2.3,-0.5 -4,-1.8 -4,-4c0,-1.1 0.5,-2.2 1.2,-3c-0.1,-0.2 -0.2,-0.7 -0.2,-1.4c0,-0.4 0,-1 0.3,-1.6c0,0 1.4,0 2.8,1.3c0.5,-0.2 1.2,-0.3 1.9,-0.3c0.7,0 1.4,0.1 2,0.3c1.3,-1.3 2.8,-1.3 2.8,-1.3c0.2,0.6 0.2,1.2 0.2,1.6c0,0.8 -0.1,1.2 -0.2,1.4c0.7,0.8 1.2,1.8 1.2,3c0,2.2 -1.7,3.5 -4,4c0.6,0.5 1,1.4 1,2.3v2.6c0,0.3 0.3,0.6 0.7,0.5c3.7,-1.5 6.3,-5.1 6.3,-9.3c0,-6 -5.1,-10.7 -11.1,-10z"></path></g></g></g>
+                </svg>
+                <svg xmlns="http://www.w3.org/2000/svg" x="0px" y="0px" width="55" height="55" viewBox="0,0,256,256" class="hidden dark:inline-block">
+                    <g fill="#ffffff" fill-rule="nonzero" stroke="none" stroke-width="1" stroke-linecap="butt" stroke-linejoin="miter" stroke-miterlimit="10" stroke-dasharray="" stroke-dashoffset="0" font-family="none" font-weight="none" font-size="none" text-anchor="none" style="mix-blend-mode: normal"><g transform="scale(10.66667,10.66667)"><path d="M10.9,2.1c-4.6,0.5 -8.3,4.2 -8.8,8.7c-0.5,4.7 2.2,8.9 6.3,10.5c0.3,0.1 0.6,-0.1 0.6,-0.5v-1.6c0,0 -0.4,0.1 -0.9,0.1c-1.4,0 -2,-1.2 -2.1,-1.9c-0.1,-0.4 -0.3,-0.7 -0.6,-1c-0.3,-0.1 -0.4,-0.1 -0.4,-0.2c0,-0.2 0.3,-0.2 0.4,-0.2c0.6,0 1.1,0.7 1.3,1c0.5,0.8 1.1,1 1.4,1c0.4,0 0.7,-0.1 0.9,-0.2c0.1,-0.7 0.4,-1.4 1,-1.8c-2.3,-0.5 -4,-1.8 -4,-4c0,-1.1 0.5,-2.2 1.2,-3c-0.1,-0.2 -0.2,-0.7 -0.2,-1.4c0,-0.4 0,-1 0.3,-1.6c0,0 1.4,0 2.8,1.3c0.5,-0.2 1.2,-0.3 1.9,-0.3c0.7,0 1.4,0.1 2,0.3c1.3,-1.3 2.8,-1.3 2.8,-1.3c0.2,0.6 0.2,1.2 0.2,1.6c0,0.8 -0.1,1.2 -0.2,1.4c0.7,0.8 1.2,1.8 1.2,3c0,2.2 -1.7,3.5 -4,4c0.6,0.5 1,1.4 1,2.3v2.6c0,0.3 0.3,0.6 0.7,0.5c3.7,-1.5 6.3,-5.1 6.3,-9.3c0,-6 -5.1,-10.7 -11.1,-10z"></path></g></g>
+                </svg>
+            </a>
+            <a href="#">
+                <svg xmlns="http://www.w3.org/2000/svg" x="0px" y="0px" width="35" height="35" viewBox="0 0 50 50" class="dark:hidden">
+                    <path d="M25,2C12.317,2,2,12.317,2,25s10.317,23,23,23s23-10.317,23-23S37.683,2,25,2z M36.237,20.524 c0.01,0.236,0.016,0.476,0.016,0.717C36.253,28.559,30.68,37,20.491,37c-3.128,0-6.041-0.917-8.491-2.489 c0.433,0.052,0.872,0.077,1.321,0.077c2.596,0,4.985-0.884,6.879-2.37c-2.424-0.044-4.468-1.649-5.175-3.847 c0.339,0.065,0.686,0.1,1.044,0.1c0.505,0,0.995-0.067,1.458-0.195c-2.532-0.511-4.441-2.747-4.441-5.432c0-0.024,0-0.047,0-0.07 c0.747,0.415,1.6,0.665,2.509,0.694c-1.488-0.995-2.464-2.689-2.464-4.611c0-1.015,0.272-1.966,0.749-2.786 c2.733,3.351,6.815,5.556,11.418,5.788c-0.095-0.406-0.145-0.828-0.145-1.262c0-3.059,2.48-5.539,5.54-5.539 c1.593,0,3.032,0.672,4.042,1.749c1.261-0.248,2.448-0.709,3.518-1.343c-0.413,1.292-1.292,2.378-2.437,3.064 c1.122-0.136,2.188-0.432,3.183-0.873C38.257,18.766,37.318,19.743,36.237,20.524z"></path>
+                </svg>
+                <svg xmlns="http://www.w3.org/2000/svg" x="0px" y="0px" width="45" height="45" viewBox="0,0,256,256" class="hidden dark:inline-block">
+                    <g fill="#ffffff" fill-rule="nonzero" stroke="none" stroke-width="1" stroke-linecap="butt" stroke-linejoin="miter" stroke-miterlimit="10" stroke-dasharray="" stroke-dashoffset="0" font-family="none" font-weight="none" font-size="none" text-anchor="none" style="mix-blend-mode: normal"><g transform="scale(5.12,5.12)"><path d="M25,2c-12.683,0 -23,10.317 -23,23c0,12.683 10.317,23 23,23c12.683,0 23,-10.317 23,-23c0,-12.683 -10.317,-23 -23,-23zM36.237,20.524c0.01,0.236 0.016,0.476 0.016,0.717c0,7.318 -5.573,15.759 -15.762,15.759c-3.128,0 -6.041,-0.917 -8.491,-2.489c0.433,0.052 0.872,0.077 1.321,0.077c2.596,0 4.985,-0.884 6.879,-2.37c-2.424,-0.044 -4.468,-1.649 -5.175,-3.847c0.339,0.065 0.686,0.1 1.044,0.1c0.505,0 0.995,-0.067 1.458,-0.195c-2.532,-0.511 -4.441,-2.747 -4.441,-5.432c0,-0.024 0,-0.047 0,-0.07c0.747,0.415 1.6,0.665 2.509,0.694c-1.488,-0.995 -2.464,-2.689 -2.464,-4.611c0,-1.015 0.272,-1.966 0.749,-2.786c2.733,3.351 6.815,5.556 11.418,5.788c-0.095,-0.406 -0.145,-0.828 -0.145,-1.262c0,-3.059 2.48,-5.539 5.54,-5.539c1.593,0 3.032,0.672 4.042,1.749c1.261,-0.248 2.448,-0.709 3.518,-1.343c-0.413,1.292 -1.292,2.378 -2.437,3.064c1.122,-0.136 2.188,-0.432 3.183,-0.873c-0.742,1.111 -1.681,2.088 -2.762,2.869z"></path></g></g>
+                </svg>
+            </a>
+            <a href="#">
+                <svg xmlns="http://www.w3.org/2000/svg" x="0px" y="0px" width="60" height="60" viewBox="0 0 30 30" class="pr-5 dark:hidden">
+                    <path d="M15,3C8.373,3,3,8.373,3,15c0,6.627,5.373,12,12,12s12-5.373,12-12C27,8.373,21.627,3,15,3z M10.496,8.403 c0.842,0,1.403,0.561,1.403,1.309c0,0.748-0.561,1.309-1.496,1.309C9.561,11.022,9,10.46,9,9.712C9,8.964,9.561,8.403,10.496,8.403z M12,20H9v-8h3V20z M22,20h-2.824v-4.372c0-1.209-0.753-1.488-1.035-1.488s-1.224,0.186-1.224,1.488c0,0.186,0,4.372,0,4.372H14v-8 h2.918v1.116C17.294,12.465,18.047,12,19.459,12C20.871,12,22,13.116,22,15.628V20z"></path>
+                </svg>
+                <svg xmlns="http://www.w3.org/2000/svg" x="0px" y="0px" width="55" height="55" viewBox="0,0,256,256" class="hidden dark:inline-block">
+                    <g fill="#ffffff" fill-rule="nonzero" stroke="none" stroke-width="1" stroke-linecap="butt" stroke-linejoin="miter" stroke-miterlimit="10" stroke-dasharray="" stroke-dashoffset="0" font-family="none" font-weight="none" font-size="none" text-anchor="none" style="mix-blend-mode: normal"><g transform="scale(8.53333,8.53333)"><path d="M15,3c-6.627,0 -12,5.373 -12,12c0,6.627 5.373,12 12,12c6.627,0 12,-5.373 12,-12c0,-6.627 -5.373,-12 -12,-12zM10.496,8.403c0.842,0 1.403,0.561 1.403,1.309c0,0.748 -0.561,1.309 -1.496,1.309c-0.842,0.001 -1.403,-0.561 -1.403,-1.309c0,-0.748 0.561,-1.309 1.496,-1.309zM12,20h-3v-8h3zM22,20h-2.824v-4.372c0,-1.209 -0.753,-1.488 -1.035,-1.488c-0.282,0 -1.224,0.186 -1.224,1.488c0,0.186 0,4.372 0,4.372h-2.917v-8h2.918v1.116c0.376,-0.651 1.129,-1.116 2.541,-1.116c1.412,0 2.541,1.116 2.541,3.628z"></path></g></g>
+                </svg>
+            </a>
+        </div>
+
+
+
+        <div></div>
+    </section>
+
+
+
+    <div class="flex justify-center items-center gap-5 mt-28">
+        <div class="border border-gray-300 w-1/3 md:w-1/6"></div>
+        <div class="text-2xl dark:text-light-on-primary-light">کوئرالیست</div>
+        <div class="border border-gray-300 w-1/3 md:w-1/6"></div>
+    </div>
+
+    <footer class="md:hidden w-4/5 mx-auto">
+        <div class="relative pt-5">
+            <p class="dark:text-light-on-primary-light">با ما در ارتباط باش</p>
+            <p class="dark:text-light-on-primary-light">اگه میخوای اولین نفری باشی که از فیچرهای جدید  و تخفیفات با خبر بشی....</p>
+            <input type="email" placeholder="ایمیل" class="rounded-lg border border-gray-400 w-full mt-8 px-3 py-2 bg-transparent dark:bg-dark-card-bg">
+            <button class="bg-light-primary text-white py-1 px-[10px] rounded-lg absolute left-2 bottom-1">ارسال</button>
+        </div>
+
+        <div class="flex gap-5 justify-center mt-7">
+            <div class= "border border-gray-300 rounded-2xl w-1/2 px-[9px] py-5 dark:bg-dark-card-bg dark:border-dark-card-bg ">
+                <img src="../assets/image/locationmobile.png" class="mx-auto dark:hidden" alt="location-icon">
+                <img src="../assets/image/foot-location-dark.png" alt="location" class="mx-auto hidden dark:block">
+                <p class="mt-2 dark:text-light-on-primary-light">آدرس دفتر مرکزی: پونک - خیابان اشرفی اصفهانی - خیابان صبحدل- بن بست شب بو</p>
+            </div>
+
+            <div class="w-1/2 flex flex-col gap-3">
+                <div class="border border-gray-300 rounded-2xl flex items-center gap-2 p-3 py-5 dark:bg-dark-card-bg dark:border-dark-card-bg">
+                    <div>
+                        <img src="../assets/image/tellmobile.png" alt="tellphone" class="dark:hidden">
+                        <img src="../assets/image/foot-mobile-dark.png" alt="tellphone" class="hidden dark:block">
+                    </div>
+                    <div>
+                        <p class="dark:text-light-on-primary-light">تلفن پشتیبانی</p>
+                        <a href="tel:02166554444"><p class="text-[14px] dark:text-light-on-primary-light"> ۴۴۴۴۵۵۶۶ - ۰۲۱</p></a>
+                    </div>
+                </div>
+
+                <div class="border border-gray-300 rounded-2xl flex items-center gap-2 p-3 py-5 dark:bg-dark-card-bg dark:border-dark-card-bg">
+                    <div>
+                        <img src="../assets/image/faxmobile.png" alt="fax-icon" class="dark:hidden">
+                        <img src="../assets/image/foot-fax-dark.png" alt="fax-icon" class="hidden dark:block">
+                    </div>
+                    <div>
+                        <p class="dark:text-light-on-primary-light">فکس</p>
+                        <p class="text-[14px] dark:text-light-on-primary-light"> ۴۴۴۴۵۵۶۶ - ۰۲۱</p>
+                    </div>
+                </div>
+            </div>
+            
+        </div>
+    </footer>
+
+
+    <footer class="md:w-[75%] md:mx-auto md:flex md:justify-between md:gap-28 md:mt-10 hidden">
+        <div class="flex flex-col gap-y-4 w-1/2">
+            <div class="flex items-center gap-3 ">
+                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" class="size-6 dark:text-white">
+                    <path fill-rule="evenodd" d="M7.875 1.5C6.839 1.5 6 2.34 6 3.375v2.99c-.426.053-.851.11-1.274.174-1.454.218-2.476 1.483-2.476 2.917v6.294a3 3 0 0 0 3 3h.27l-.155 1.705A1.875 1.875 0 0 0 7.232 22.5h9.536a1.875 1.875 0 0 0 1.867-2.045l-.155-1.705h.27a3 3 0 0 0 3-3V9.456c0-1.434-1.022-2.7-2.476-2.917A48.716 48.716 0 0 0 18 6.366V3.375c0-1.036-.84-1.875-1.875-1.875h-8.25ZM16.5 6.205v-2.83A.375.375 0 0 0 16.125 3h-8.25a.375.375 0 0 0-.375.375v2.83a49.353 49.353 0 0 1 9 0Zm-.217 8.265c.178.018.317.16.333.337l.526 5.784a.375.375 0 0 1-.374.409H7.232a.375.375 0 0 1-.374-.409l.526-5.784a.373.373 0 0 1 .333-.337 41.741 41.741 0 0 1 8.566 0Zm.967-3.97a.75.75 0 0 1 .75-.75h.008a.75.75 0 0 1 .75.75v.008a.75.75 0 0 1-.75.75H18a.75.75 0 0 1-.75-.75V10.5ZM15 9.75a.75.75 0 0 0-.75.75v.008c0 .414.336.75.75.75h.008a.75.75 0 0 0 .75-.75V10.5a.75.75 0 0 0-.75-.75H15Z" clip-rule="evenodd" />
+                </svg>
+                <p class="dark:text-light-on-primary-light">فکس: ۴۴۴۴۵۵۶۶ - ۰۲۱</p>  
+            </div>
+            <div class="flex items-center gap-3">
+                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" class="size-6 dark:text-white">
+                    <path fill-rule="evenodd" d="M1.5 4.5a3 3 0 0 1 3-3h1.372c.86 0 1.61.586 1.819 1.42l1.105 4.423a1.875 1.875 0 0 1-.694 1.955l-1.293.97c-.135.101-.164.249-.126.352a11.285 11.285 0 0 0 6.697 6.697c.103.038.25.009.352-.126l.97-1.293a1.875 1.875 0 0 1 1.955-.694l4.423 1.105c.834.209 1.42.959 1.42 1.82V19.5a3 3 0 0 1-3 3h-2.25C8.552 22.5 1.5 15.448 1.5 6.75V4.5Z" clip-rule="evenodd" />
+                </svg>
+                <a href="tel:02144445566"><p class="dark:text-light-on-primary-light">تلفن پشتیبانی: ۴۴۴۴۵۵۶۶ - ۰۲۱</p></a> 
+            </div>
+            <div class="flex items-center gap-3">
+                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" class="size-6 dark:text-white">
+                    <path fill-rule="evenodd" d="m11.54 22.351.07.04.028.016a.76.76 0 0 0 .723 0l.028-.015.071-.041a16.975 16.975 0 0 0 1.144-.742 19.58 19.58 0 0 0 2.683-2.282c1.944-1.99 3.963-4.98 3.963-8.827a8.25 8.25 0 0 0-16.5 0c0 3.846 2.02 6.837 3.963 8.827a19.58 19.58 0 0 0 2.682 2.282 16.975 16.975 0 0 0 1.145.742ZM12 13.5a3 3 0 1 0 0-6 3 3 0 0 0 0 6Z" clip-rule="evenodd" />
+                </svg>
+                <p class="w-full dark:text-light-on-primary-light"">آدرس دفتر مرکزی: پونک - خیابان اشرفی اصفهانی - خیابان صبحدل- بن بست شب بو</p>
+            </div>
+        </div>
+        <div class="w-1/2 flex flex-col gap-4 mr-36 pr-12">
+            <p class="dark:text-light-on-primary-light">با ما در ارتباط باش</p>
+            <p class=" md:w-full lg:w-2/3 dark:text-light-on-primary-light"">اگر میخوای اولین نفر باشی که از فیچرهای جدید و نخفیفات باخبر بشی....</p>
+            <div class="relative md:mt-3">
+                <input type="email" placeholder="ایمیل" class="border border-gray-300 py-[10px] px-2  md:w-full lg:w-4/5 rounded-lg dark:bg-dark-card-bg">
+                <button class="absolute bg-light-primary text-white py-1 px-2 rounded-lg md:top-[6px] md:left-1 lg:left-[85px]">ارسال</button>
+            </div>
+        </div>
+    </footer>
+
+    <section class="flex justify-center items-center p-4 pt-14 text-[#666666] dark:text-light-on-primary-light">
+        <p>تمامی حقوق مادی و معنوی این سایت متعلق به کوئرا لیست می‌باشد.</p>
+    </section>
+    
+
+    <script src="./main.js"></script>
+</body>
+</html>
